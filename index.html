@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>Watson portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,500;1,600&display=swap" rel="stylesheet">
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -15,8 +15,18 @@
   <section class="main-container">
     <section class="hero">
       <div class="hero-text-con">
-        <p class="hero-title">Welcome to my Portfolio</p>
-        <p class="hero-paragraph">More text goes here blah blah blah</p>
+        <div class="hero-logo">
+          <img src="images/cadence-logo.svg">
+        </div>
+        <p class="hero-title">Cadence brings<br> information to life with</p>
+        <span class="txt-rotate" 
+            data-period="2000"
+            data-rotate='[ "storytelling.", "technology.", "purpose." ]'>
+        </span>
+        <div id="close-button"></div>
+        <div id="hero-button">
+          <p>My work</p>
+        </div>
       </div>
       <div id="force-graph">
         <h2 class="hidden">Force Graph</h2>

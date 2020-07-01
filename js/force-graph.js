@@ -17,15 +17,15 @@ var svg = d3.select("#force-graph")
 svg.append("rect")
     .attr("width", "100%")
     .attr("height", "100%")
-    .attr("fill", "#F2F3F0");
+    .attr("fill", "white");
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) {
         return d.id;
     }))
     .force('charge', d3.forceManyBody()
-        .strength(-1600)
-        .distanceMax(700)
+        .strength(-850)
+        .distanceMax(900)
     )
     .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -35,7 +35,8 @@ function buildDiagram(graph) {
     
 
     var link = svg.append("g")
-        .style("stroke", "#C0C9CC")
+        .style("stroke", "black")
+        .style("stroke-width", ".5px")
         .selectAll("line")
         .data(graph.links)
         .enter().append("line");
@@ -51,12 +52,10 @@ function buildDiagram(graph) {
     .enter()
         .append("svg:image")
         .attr("xlink:href",  function(d) { return d.img;})
-        .attr("x", function(d) { return -25;})
-        .attr("y", function(d) { return -25;})
+        .attr("x", function(d) { return -38;})
+        .attr("y", function(d) { return -38;})
         .attr("height", function(d) { return d.rad;})
         .attr("width", function(d) { return d.rad;})
-        .style("stroke", "#424242")
-        .style("stroke-width", "0px")
         .call(d3.drag()
             .on("start", dragstarted)
             .on("drag", dragged)
@@ -187,7 +186,7 @@ var graph = {
         "group": 2,
         "name": "ME",
         "img":  "images/me.png",
-        "rad": 100
+        "rad": 125
     }, {
         "id": "9",
         "group": 2,
