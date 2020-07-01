@@ -2,6 +2,7 @@
 
 var dimensions = document.getElementById("force-graph");
 
+
 var width = dimensions.offsetWidth;
 
 var height = dimensions.offsetHeight;
@@ -13,11 +14,17 @@ var svg = d3.select("#force-graph")
     .append('svg')
     .attr("width", width)
     .attr("height", height);
+    
+    
+
 
 svg.append("rect")
     .attr("width", "100%")
     .attr("height", "100%")
     .attr("fill", "white");
+   
+    
+    
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) {
