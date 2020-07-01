@@ -4,13 +4,10 @@ var dimensions = document.getElementById("force-graph");
 
 var width = dimensions.offsetWidth;
 
-var height = dimensions.offsetHeight * .98;
+var height = dimensions.offsetHeight;
 
 maxNodeSize = 50;
-//imports in a colour palette as an array
-var color = d3.scaleOrdinal(d3.schemeCategory20b)
-    .domain([1, 2, 3, 4, 5, 6])
-    .range(["#011638", "#d33f49", "#eec643", "#68B3A2", "#429b40", "#1880a0"]);
+
 //companies, job titles (alumni), back end, front end, framework tech  
 var svg = d3.select("#force-graph")
     .append('svg')
@@ -27,10 +24,11 @@ var simulation = d3.forceSimulation()
         return d.id;
     }))
     .force('charge', d3.forceManyBody()
-        .strength(-650)
-        .distanceMax(10000)
+        .strength(-1600)
+        .distanceMax(700)
     )
     .force("center", d3.forceCenter(width / 2, height / 2));
+
 
 
 function buildDiagram(graph) {
@@ -55,8 +53,8 @@ function buildDiagram(graph) {
         .attr("xlink:href",  function(d) { return d.img;})
         .attr("x", function(d) { return -25;})
         .attr("y", function(d) { return -25;})
-        .attr("height", 50)
-        .attr("width", 50)
+        .attr("height", function(d) { return d.rad;})
+        .attr("width", function(d) { return d.rad;})
         .style("stroke", "#424242")
         .style("stroke-width", "0px")
         .call(d3.drag()
@@ -64,17 +62,10 @@ function buildDiagram(graph) {
             .on("drag", dragged)
             .on("end", dragended));
 
-           
+  
         
     //create SVG labels from text values
-    var label = svg.append("g")
-        .selectAll("text")
-        .data(graph.nodes)
-        .enter()
-        .append("text")
-        .text(function(d) {
-            return d.name;
-        });
+    
 
     simulation
         .nodes(graph.nodes)
@@ -83,9 +74,7 @@ function buildDiagram(graph) {
     simulation.force("link")
         .links(graph.links);
 
-
-        
-
+     
     function ticked() {
         link
             .attr("x1", function(d) {
@@ -123,20 +112,10 @@ function buildDiagram(graph) {
             d.y =  Math.max(maxNodeSize, Math.min(height - (d.imgheight/2 || 16), d.y));
             return "translate(" + d.x + "," + d.y + ")";
         });
-
-        label
-            .attr("x", function(d) {
-                return d.x + 18;
-            })
-            .attr("y", function(d) {
-                return d.y + 25;
-            })
-            .style("font-size", "13px").style("fill", "#444")
-            .style("font-family", 'akzidenz-grotesk_bqregular');
+  
     }
     
 }
-
 
 
    
@@ -163,115 +142,169 @@ function dragended(d) {
 var graph = {
     "nodes": [{
         "id": "1",
-        "group": 4,
-        "name": "JavaScript",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/thanos.png",
-        "rad": 12
+        "group": 3,
+        "name": "JohnnyFive",
+        "img":  "images/j5-logo.png",
+        "rad": 60
     }, {
         "id": "2",
         "group": 3,
-        "name": "PHP",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/magneto.png",
-        "rad": 12
+        "name": "After Effects",
+        "img":  "images/after-effects-logo.png",
+        "rad": 60
     }, {
         "id": "3",
         "group": 3,
         "name": "Python",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/ronan.png",
-        "rad": 12
+        "img":  "images/greensock-logo.svg",
+        "rad": 60
     }, {
         "id": "4",
         "group": 4,
         "name": "CSS",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/redskull.png",
-        "rad": 15
+        "img":  "images/git-hub.png",
+        "rad": 60
     }, {
         "id": "5",
         "group": 2,
-        "name": "Back End Developer",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/mystique.png",
-        "rad": 15
+        "name": "Adobe",
+        "img":  "images/adobe-logo.png",
+        "rad": 60
     }, {
         "id": "6",
         "group": 2,
-        "name": "Front End Developer",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/drdoom.png",
-        "rad": 15
+        "name": "Javacript",
+        "img":  "images/javascript-logo.png",
+        "rad": 60
     }, {
         "id": "7",
         "group": 2,
         "name": "Web Designer",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_spiderman.png",
-        "rad": 9
+        "img":  "images/python-pandas-logo.png",
+        "rad": 60
     }, {
         "id": "8",
         "group": 2,
         "name": "ME",
-        "img":  "https://github.com/awatson23/watsons-portfolio/blob/master/images/me.png",
-        "rad": 18
+        "img":  "images/me.png",
+        "rad": 100
     }, {
         "id": "9",
         "group": 2,
-        "name": "UI-UX Designer",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_hulk.png",
-        "rad": 9
+        "name": "ScrapyUI-UX Designer",
+        "img":  "images/scrapy.png",
+        "rad": 60
     }, {
         "id": "10",
         "group": 2,
-        "name": "Full Stack Developer",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_blackwidow.png",
-        "rad": 15
+        "name": "Arduino",
+        "img":  "images/arduino-logo.png",
+        "rad": 60
     }, {
         "id": "11",
         "group": 3,
         "name": "Python Pandas",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_daredevil.png",
-        "rad": 12
+        "img":  "images/adobe-premier-logo.png",
+        "rad": 60
     }, {
         "id": "12",
         "group": 3,
-        "name": "Python Web Scraping",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_wolverine.png",
-        "rad": 12
+        "name": "Illustrator",
+        "img":  "images/illustrator-logo.png",
+        "rad": 60
     }, {
         "id": "13",
         "group": 3,
-        "name": "Python Flask",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_captainamerica.png",
-        "rad": 12
+        "name": "Photoshop",
+        "img":  "images/photoshop-logo.png",
+        "rad": 60
     }, {
         "id": "14",
         "group": 2,
-        "name": "Design Lead",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_ironman.png",
-        "rad": 15
+        "name": "Python",
+        "img":  "images/python-logo.png",
+        "rad": 60
     }, {
         "id": "15",
         "group": 6,
-        "name": "Drupal",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_thor.png",
-        "rad": 15
+        "name": "P5.js",
+        "img":  "images/p5js.png",
+        "rad": 60
+    }, {
+        "id": "16",
+        "group": 6,
+        "name": "HTML",
+        "img":  "images/html-logo.png",
+        "rad": 60
+    }, {
+        "id": "17",
+        "group": 6,
+        "name": "CSS",
+        "img":  "images/css-logo.png",
+        "rad": 60
+    }, {
+        "id": "18",
+        "group": 6,
+        "name": "C4D",
+        "img":  "images/c4d-logo.png",
+        "rad": 60
+    }, {
+        "id": "19",
+        "group": 6,
+        "name": "Shopify",
+        "img":  "images/shopify-logo.png",
+        "rad": 60
     }],
 
 
     "links": [{
+        "source": "19",
+        "target": "8",
+        "value": 4
+
+    }, {
+        "source": "18",
+        "target": "8",
+        "value": 4
+
+    }, {
+        "source": "6",
+        "target": "17",
+        "value": 4
+
+    }, {
+        "source": "6",
+        "target": "16",
+        "value": 4
+
+    }, {
+        "source": "17",
+        "target": "16",
+        "value": 4
+
+    }, {
+        "source": "17",
+        "target": "8",
+        "value": 4
+
+    }, {
+        "source": "16",
+        "target": "8",
+        "value": 4
+
+    }, {
         "source": "8",
         "target": "10",
         "value": 4
 
     }, {
         "source": "4",
-        "target": "7",
+        "target": "8",
         "value": 4
 
     }, {
-        "source": "10",
+        "source": "6",
         "target": "15",
-        "value": 4
-
-    }, {
-        "source": "15",
-        "target": "6",
         "value": 4
 
     }, {
@@ -301,11 +334,6 @@ var graph = {
 
     }, {
         "source": "5",
-        "target": "1",
-        "value": 4
-
-    }, {
-        "source": "5",
         "target": "2",
         "value": 4
 
@@ -320,7 +348,7 @@ var graph = {
         "value": 4
 
     }, {
-        "source": "10",
+        "source": "6",
         "target": "3",
         "value": 4
 
@@ -333,22 +361,14 @@ var graph = {
         "source": "5",
         "target": "12",
         "value": 4
-
     }, {
-        "source": "6",
-        "target": "4",
+        "source": "1",
+        "target": "6",
         "value": 4
-
     }, {
-        "source": "10",
-        "target": "13",
+        "source": "1",
+        "target": "10",
         "value": 4
-
-    }, {
-        "source": "10",
-        "target": "1",
-        "value": 4
-
     }]
 }
 
