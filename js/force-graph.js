@@ -207,7 +207,7 @@ var graph = {
         "id": "8",
         "group": 2,
         "name": "ME",
-        "img":  "http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_captainmarvel.png",
+        "img":  "https://github.com/awatson23/watsons-portfolio/blob/master/images/me.png",
         "rad": 18
     }, {
         "id": "9",
