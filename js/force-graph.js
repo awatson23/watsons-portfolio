@@ -146,7 +146,13 @@ function dragended(d) {
 
 
 var graph = {
-    "nodes": [{
+    "nodes": [{ 
+        "id": "8",
+        "group": 2,
+        "name": "ME",
+        "img":  "images/me.png",
+        "rad": 125
+    }, {
         "id": "1",
         "group": 3,
         "name": "JohnnyFive",
@@ -188,12 +194,6 @@ var graph = {
         "name": "Web Designer",
         "img":  "images/python-pandas-logo.png",
         "rad": 60
-    }, {
-        "id": "8",
-        "group": 2,
-        "name": "ME",
-        "img":  "images/me.png",
-        "rad": 125
     }, {
         "id": "9",
         "group": 2,
