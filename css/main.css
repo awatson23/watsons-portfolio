@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -11,7 +11,7 @@ a {
 }
 
 strong {
-    color: #9a1750;
+    font-weight: 500;
 }
 
 .footer {
@@ -48,13 +48,14 @@ strong {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 2%;
-    line-height: 25px;
+    line-height: 25px; 
 }
 
 .copy {
     font-size: 17px;
     margin-bottom: 2%;
     line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -66,7 +67,7 @@ strong {
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: #DFDBE5;
+    background-color: #19181a;
     
 }
 
@@ -84,7 +85,7 @@ strong {
     position: absolute;
     bottom: 5%;
     right: 5%;
-    color: #9a1750;
+    color: #ff5410;
 }
 
 .hero-video video {
@@ -98,9 +99,10 @@ strong {
     z-index: 1;
     padding: 6vw;
     padding-top: 15vh;
-    color: #2c1f19;
+    color: white;
     font-size: 43px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    
     position: relative;
     
 }
@@ -112,28 +114,32 @@ strong {
 }
 
 .txt-rotate {
-    color: #9a1750;
+    color: rgb(255, 40, 57);
 }
 
 .hero-title {
     padding-top: 4%;
     font-weight: 300;
-
 }
 
 .hero-name {
-    border-top: solid 1.3px #9a1750;
     padding-top: 4%;
     font-weight: 300;
 }
 
+.logo {
+    width: 18%;
+
+}
+
 #hero-button {
-    text-align: center;
+    text-align: left;
     font-size: 18px;
-    background-color: #9a1750;
+    font-weight: bold;
     color: white;
-    width: 7vw;
-    margin-top: 25vh;
+    width: 5vw;
+    margin-top: 15vh;
+    background-color: rgb(255, 40, 57);
     padding: 4%;
     font-weight: 600;
 }
@@ -158,6 +164,7 @@ strong {
 
 .projects-container {
     width: 100vw;
+    padding-bottom: 15vh;
 }
 
 .projects {
@@ -166,18 +173,41 @@ strong {
 }
 
 .project-indv {
-    width: 45vw;
-    height: 45vw;
+    width: 40vw;
+    height: 40vw;
     margin: 0 auto;
     margin-top: 50px;
     border-radius: 3%;
+    position: relative;
+    -webkit-box-shadow: 9px 9px 42px -8px rgba(0,0,0,0.35);
+    -moz-box-shadow: 9px 9px 42px -8px rgba(0,0,0,0.35);
+    box-shadow: 9px 9px 42px -8px rgba(0,0,0,0.35);
 }
 
 .project-indv h1 {
     font-size: 50px;
     color: white;
-    padding: 15%;
+    text-transform: uppercase;
+    font-weight: bold;
+    bottom: 10%;
+    left: 10%;
+    position: absolute;
+
 }
+
+.project-overlay {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 3%;
+    background: rgba(0, 0, 0, 0.8);
+    transition-duration: .8s;   
+}
+    
+    
+.project-overlay:hover {
+    opacity: 0;
+}
+
 
 #project1 {
     background-image: url("../images/bacteriophage-ipad.png");
@@ -186,19 +216,6 @@ strong {
     background-size: cover;
 }
 
-.project1-overlay {
-    width: 45vw;
-    height: 45vw;
-    border-radius: 3%;
-    background: rgba(0, 0, 0, 0.8);
-    transition-duration: 1s;
-
-}
-
-
-.project1-overlay:hover {
-    background: rgba(0, 0, 0, 0.2);
-}
 
 /*project 2*/
 
@@ -209,20 +226,27 @@ strong {
     background-size: cover;
 }
 
-.project2-overlay {
-    width: 45vw;
-    height: 45vw;
-    border-radius: 3%;
-    background: rgba(0, 0, 0, 0.7);
-    transition-duration: 1s;
-    
+
+/*project 3*/
+
+
+#project3 {
+    background-image: url("../images/gta-data-image.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
 }
 
 
-.project2-overlay:hover {
-    background: rgba(0, 0, 0, 0.2);
-}
 
+/*project 4*/
+
+#project4 {
+    background-image: url("../images/iecs-cable-concrete.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
 
 
 /*project page*/

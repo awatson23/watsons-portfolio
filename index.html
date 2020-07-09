@@ -5,6 +5,8 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>Watson portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -15,15 +17,16 @@
     <section class="hero">
       <div class="hero-text-con">
 
+        <div class="logo"><img src="images/official-logo-pink.svg"></div>
+
         <p class="hero-name">My name is <br><strong>Cadence Watson.</strong></p>
         <p class="hero-title">I bring information<br> to life with</p>
         <span class="txt-rotate" 
             data-period="2000"
             data-rotate='[ "storytelling.", "technology.", "purpose." ]'>
         </span>
-        <div id="close-button"></div>
         <div id="hero-button">
-          <p>My work</p>
+          <p>MY WORK</p>
         </div>
       </div>
       <div id="force-graph">
@@ -34,17 +37,18 @@
       </div>
       
     </section>
-    <div class="projects-container">
+    <section class="projects-container">
       <h1 class="title">Featured Projects</h1>
       <div class="projects">
-        <div id="project1" class="project-indv"><a href="project-bacteriophage.html"><div class="project1-overlay"><h1>The <br>Bacteriophage</h1></div></a></div>
-        <div id="project2" class="project-indv"><a href="project-wind-turbine.html"><div class="project2-overlay"><h1>The Wind Turbine<br>and its History</h1></div></a></div>
-        <div id="project3" class="project-indv"></div>
-        <div id="project4" class="project-indv"></div>
+        <div id="project1" class="project-indv"><a href="project-bacteriophage.html"><div class="project-overlay"><h1>The <br>Bacteriophage</h1></div></a></div>
+        <div id="project2" class="project-indv"><a href="project-wind-turbine.html"><div class="project-overlay"><h1>The Wind Turbine<br>and its History</h1></div></a></div>
+        <div id="project3" class="project-indv"><a href="project-gta-accidents.html"><div class="project-overlay"><h1>GTA Pedestrian and Cyclist accidents</h1></div></a></div>
+        <div id="project4" class="project-indv"><a href="project-iecs-cable-concrete.html"><div class="project-overlay"><h1>IECS Cable Concrete Web Infographic</h1></div></a></div>
       </div>
   </section>
-  <div class="welcome"></div>
-  <div class="footer"></div>
+  <section class="footer">
+    <div class="contact-div"></div>
+  </section>
 
 <script src="js/force-graph.js"></script>
 <script src="js/script.js"></script>
