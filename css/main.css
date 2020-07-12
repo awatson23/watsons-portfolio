@@ -4,6 +4,12 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+.bar-code {
+    font-family: 'Libre Barcode 39', cursive;
+    color: white;
 }
 
 .hidden {
@@ -16,8 +22,48 @@ strong {
 
 .footer {
     width: 100vw;
-    height: 60vh;
-    background-color: black;
+    height: 45vh;
+    background-color: #19181a;
+    position: relative;
+}
+
+
+.copyright {
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 7%;
+    text-align: center;
+}
+
+.contact-div {
+    text-align: center;
+    color: white;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.contact-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-div h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contact-indv p {
+    margin-top: 10px;
+}
+
+.contact-indv img {
+    width: 33.333%;
 }
 
 .main-container {
@@ -27,15 +73,7 @@ strong {
     overflow: hidden;
 }
 
-.nav-bar {
-    width: 100vw;
-    height: 10vh;
-    position: fixed;
-    background-color: black;
-    z-index: 2;
-    top: 0%;
-    opacity: .5;
-}
+
 
 .title {
     text-align: center;
@@ -49,13 +87,15 @@ strong {
     font-size: 20px;
     margin-bottom: 2%;
     line-height: 25px; 
+    color: #19181a;
 }
 
 .copy {
     font-size: 17px;
     margin-bottom: 2%;
-    line-height: 22px;
+    line-height: 24px;
     font-family: 'Montserrat', sans-serif;
+    color: #19181a;
 }
 
 
@@ -76,6 +116,7 @@ strong {
     height: 100vh;
     padding-right: 5vw;
     background-color: #ffffff;  
+    position: relative;
 }
 
 #tech-i-use {
@@ -85,7 +126,7 @@ strong {
     position: absolute;
     bottom: 5%;
     right: 5%;
-    color: #ff5410;
+    color: rgb(255, 40, 57);
 }
 
 .hero-video video {
@@ -98,7 +139,7 @@ strong {
     width: 35vw;
     z-index: 1;
     padding: 6vw;
-    padding-top: 15vh;
+    padding-top: 10vh;
     color: white;
     font-size: 43px;
     font-family: 'Raleway', sans-serif;
@@ -107,11 +148,7 @@ strong {
     
 }
 
-.hero-logo {
-    width: 15vw;
-    padding-bottom: 8%;
-    
-}
+
 
 .txt-rotate {
     color: rgb(255, 40, 57);
@@ -128,8 +165,8 @@ strong {
 }
 
 .logo {
-    width: 18%;
-
+    width: 20%;
+    position: sticky;
 }
 
 #hero-button {
@@ -167,6 +204,20 @@ strong {
     padding-bottom: 15vh;
 }
 
+.projects-container .bar-code {
+    font-size: 50px;
+    text-align: center;
+}
+
+.projects-container h1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-weight: 600;
+    font-size: 27px;
+    color: #19181a;
+}
+
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,11 +235,10 @@ strong {
     box-shadow: 9px 9px 42px -8px rgba(0,0,0,0.35);
 }
 
-.project-indv h1 {
-    font-size: 50px;
+.project-indv h2 {
+    font-size: 45px;
     color: white;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
     bottom: 10%;
     left: 10%;
     position: absolute;
@@ -251,8 +301,11 @@ strong {
 
 /*project page*/
 
-.proj-image img{
-    width: 600px;
+.proj-image img {
+    width: 30vw;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 10%;
 }
 
 .proj-details {
@@ -289,12 +342,19 @@ strong {
 .proj-github-button {
     font-weighT: bold;
     text-align: center;
-    background-color: pink;
+    background-color: rgb(255, 40, 57);
+    color: white;
     width: 150px;
     padding: 10px;
+    margin-top: 15%;
 }
 
-.proj-video video {
+.proj-video {
+    width: 100vw;
+    heighT: 100vh;
+}
+
+.proj-video iframe {
     width: 100%;
     height: 100%;
 }
@@ -309,13 +369,12 @@ strong {
     margin-top: 7vh;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     .hero {
         height: 200vh;
         width: 100vw;
         display: flex;
-        flex-direction: column;   
-        
+        flex-direction: column;
     }
 
     #force-graph {
@@ -324,13 +383,31 @@ strong {
     }
 
     .hero-text-con {
+        text-align: center;
         margin: 0 auto;
         height: 100vh;
-        
+        width: 50%;
+        margin: 0 auto;
     }
 
-    .hero-logo {
-        width: 15vw;
+    .logo {
+        width: 30%;
+        margin: 40px auto;
+    }
+
+    #hero-button {
+        margin: 75px auto;
+        width: 8vw;
+    }
+
+    #tech-i-use {
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        color: rgb(255, 40, 57);
     }
 
     .projects {
@@ -338,9 +415,52 @@ strong {
         flex-direction: column;
     }
 
+    
+    .projects-container h1 {
+        margin-bottom: 2%;
+    }
+
     .project-indv {
         width: 80vw;
         height: 80vw;
     }
+    
+    .project-overlay {
+        width: 80vw;
+        height: 80vw;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+
+}
+
+@media only screen and (max-width: 850px) {
+    .hero-text-con {
+        width: 80%;
+    }
+
+    #hero-button {
+        width: 10vw;
+    }
+
+    .projects-container h1 {
+        margin-bottom: 4%;
+    }
+
+    .proj-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-div {
+        color: white;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-evenly;
+        padding-left: 5%;
+    }
+    
     
 }
