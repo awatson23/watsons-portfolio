@@ -150,115 +150,115 @@ var graph = {
         "group": 2,
         "name": "ME",
         "img":  "images/me.png",
-        "rad": 125
+        "rad": 100
     }, {
         "id": "1",
         "group": 3,
         "name": "JohnnyFive",
         "img":  "images/j5-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "2",
         "group": 3,
         "name": "After Effects",
         "img":  "images/after-effects-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "3",
         "group": 3,
         "name": "Python",
         "img":  "images/greensock-logo.svg",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "4",
         "group": 4,
         "name": "CSS",
         "img":  "images/git-hub.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "5",
         "group": 2,
         "name": "Adobe",
         "img":  "images/adobe-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "6",
         "group": 2,
         "name": "Javacript",
         "img":  "images/javascript-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "7",
         "group": 2,
         "name": "Web Designer",
         "img":  "images/python-pandas-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "9",
         "group": 2,
         "name": "ScrapyUI-UX Designer",
         "img":  "images/scrapy.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "10",
         "group": 2,
         "name": "Arduino",
         "img":  "images/arduino-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "11",
         "group": 3,
         "name": "Python Pandas",
         "img":  "images/adobe-premier-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "12",
         "group": 3,
         "name": "Illustrator",
         "img":  "images/illustrator-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "13",
         "group": 3,
         "name": "Photoshop",
         "img":  "images/photoshop-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "14",
         "group": 2,
         "name": "Python",
         "img":  "images/python-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "15",
         "group": 6,
         "name": "P5.js",
         "img":  "images/p5js.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "16",
         "group": 6,
         "name": "HTML",
         "img":  "images/html-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "17",
         "group": 6,
         "name": "CSS",
         "img":  "images/css-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "18",
         "group": 6,
         "name": "C4D",
         "img":  "images/c4d-logo.png",
-        "rad": 60
+        "rad": 50
     }, {
         "id": "19",
         "group": 6,
         "name": "Shopify",
         "img":  "images/shopify-logo.png",
-        "rad": 60
+        "rad": 50
     }],
 
 
