@@ -12,7 +12,6 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
-  <section class="nav-bar"></section>
   <section class="main-container">
     <section class="hero">
       <div class="hero-text-con">
@@ -25,9 +24,11 @@
             data-period="2000"
             data-rotate='[ "storytelling.", "technology.", "purpose." ]'>
         </span>
+        <a href="#proj-container">
         <div id="hero-button">
           <p>MY WORK</p>
         </div>
+        </a>
       </div>
       <div id="force-graph">
         <h2 class="hidden">Force Graph</h2>
@@ -37,13 +38,13 @@
       </div>
       
     </section>
-    <section class="projects-container">
+    <section id="proj-container" class="projects-container">
       <h1>FEATURED PROJECTS</h1>
       <div class="projects">
         <div id="project1" class="project-indv"><a href="project-bacteriophage.html"><div class="project-overlay"><h2>The <br>Bacteriophage</h1></div></a></div>
         <div id="project2" class="project-indv"><a href="project-wind-turbine.html"><div class="project-overlay"><h2>The Wind Turbine<br>and its History</h1></div></a></div>
-        <div id="project3" class="project-indv"><a href="project-gta-accidents.html"><div class="project-overlay"><h2>GTA Pedestrian and Cyclist accidents</h1></div></a></div>
-        <div id="project4" class="project-indv"><a href="project-iecs-cable-concrete.html"><div class="project-overlay"><h2>IECS Cable Concrete Web Infographic</h1></div></a></div>
+        <div id="project3" class="project-indv"><a href="project-gta-accidents.html"><div class="project-overlay"><h2>GTA Pedestrian and Cyclist accident data</h1></div></a></div>
+        <div id="project4" class="project-indv"><a href="project-iecs-cable-concrete.html"><div class="project-overlay"><h2>IECS Cable Concrete<br> Web Infographic</h1></div></a></div>
       </div>
   </section>
   <section class="footer">
@@ -51,26 +52,32 @@
       <h1>CONTACT</h1>
 
     <div class="contact-flex">
-      <a href="mailto: a.cadence.watson@gmail.com">
+      
       <div id="gmail" class="contact-indv">
+        <a href="mailto: a.cadence.watson@gmail.com">
         <img src="images/gmail-pink.svg">
         <p>Gmail</p>
-      </div>
       </a>
+      </div>
+      
 
-      <a href="https://github.com/awatson23">
+      
       <div id="github" class="contact-indv">
+        <a href="https://github.com/awatson23">
         <img src="images/github-pink.svg">
         <p>Github</p>
-      </div>
       </a>
+      </div>
+     
 
-      <a href="https://www.linkedin.com/in/cadence-watson/">
+    
       <div id="linkedin" class="contact-indv">
+        <a href="https://www.linkedin.com/in/cadence-watson/">
         <img src="images/linkedin-pink.svg">
         <p>Linked in</p> 
-      </div>
       </a>
+      </div>
+    
     </div>
 
       </div>
@@ -80,6 +87,7 @@
 
 
 <script src="js/force-graph.js"></script>
+<script src="js/ScrollMagic.min.js"></script>
 <script src="js/script.js"></script>
 
 

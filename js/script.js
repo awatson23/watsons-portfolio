@@ -58,4 +58,25 @@ var TxtRotate = function(el, toRotate, period) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+
+
+
+/*scrollmagic functionality*/
+
+  var controller = new ScrollMagic.Controller();
+
+  
+  var indvProj = new ScrollMagic.Scene({
+    triggerElement: '.project-indv',
+    triggerHook: .8,
+    })
+    .setClassToggle('.project-indv', 'scroll-anim')
+    .addTo(controller);
+
+  var navBar = new ScrollMagic.Scene({
+    triggerElement: '.nav-bar',
+    triggerHook: 1,
+    })
+    .setClassToggle('.projects-container', 'scroll-anim')
+    .addTo(controller);
   
