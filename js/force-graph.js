@@ -30,10 +30,10 @@ var simulation = d3.forceSimulation()
         return d.id;
     }))
     .force('charge', d3.forceManyBody()
-        .strength(-850)
-        .distanceMax(900)
+        .strength(-200 + -width)
+        .distanceMax(600)
     )
-    .force("center", d3.forceCenter(width / 2, height / 2));
+    .force("center", d3.forceCenter(width / 2.2, height / 2));
 
 
 
@@ -259,10 +259,54 @@ var graph = {
         "name": "Shopify",
         "img":  "images/shopify-logo.png",
         "rad": 50
-    }],
+    },{
+        "id": "20",
+        "group": 6,
+        "name": "Node",
+        "img":  "images/node-logo.png",
+        "rad": 60
+    },{
+        "id": "21",
+        "group": 6,
+        "name": "Charts.js",
+        "img":  "images/charts-js.png",
+        "rad": 60
+    },{
+        "id": "22",
+        "group": 6,
+        "name": "Tableau",
+        "img":  "images/tableau-logo.png",
+        "rad": 60
+    },{
+        "id": "23",
+        "group": 6,
+        "name": "D3.js",
+        "img":  "images/d3-logo.png",
+        "rad": 60
+    },],
 
 
     "links": [{
+        "source": "23",
+        "target": "6",
+        "value": 4
+
+    }, {
+        "source": "22",
+        "target": "8",
+        "value": 4
+
+    }, {
+        "source": "21",
+        "target": "6",
+        "value": 4
+
+    }, {
+        "source": "20",
+        "target": "6",
+        "value": 4
+
+    }, {
         "source": "19",
         "target": "8",
         "value": 4
@@ -270,16 +314,6 @@ var graph = {
     }, {
         "source": "18",
         "target": "8",
-        "value": 4
-
-    }, {
-        "source": "6",
-        "target": "17",
-        "value": 4
-
-    }, {
-        "source": "6",
-        "target": "16",
         "value": 4
 
     }, {

@@ -40,20 +40,48 @@ strong {
     background-color: #0f0e0f;
     position: relative;
     margin-top: 5vh;
+    bottom: 0%;
 }
 
 .nav-bar {
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     background-color: #0f0e0f;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     position: fixed;
+    top: 0;
 }
 
 .nav-logo {
-    height: 80%;
-    margin: 15% auto;
+    height: 70%;
+    margin-top: 2vh;
+    width: 7vh;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+.left-arrow {
+    height: 100%;
+    width: 2.3vh;
+}
+
+.left-arrow img {
+    margin-top: 4.5vh;
+    width: 100%;
+}
+
+.right-arrow {
+    height: 100%;
+    width: 2.3vh;
+}
+
+.right-arrow img {
+    width: 100%;
+    margin-top: 4.5vh;
 }
 
 .copyright {
@@ -82,7 +110,8 @@ strong {
 }
 
 .contact-div h1 {
-    font-size: 30px;
+    text-transform: uppercase;
+    font-size: 27px;
     font-weight: 500;
 }
 
@@ -97,6 +126,7 @@ strong {
 }
 
 .main-container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -118,7 +148,7 @@ strong {
 }
 
 .copy {
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 5%;
     margin-top: 2%;
     line-height: 25px;
@@ -144,10 +174,10 @@ strong {
 
 #force-graph {
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     background-color: #ffffff;  
     position: relative; 
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
 
 
@@ -234,6 +264,11 @@ strong {
     padding-bottom: 10vh;
     margin-top: 3%;
 }
+
+.projects-container h1 {
+    text-transform: uppercase;
+}
+
 
 
 .projects-container h1 {
@@ -414,16 +449,20 @@ strong {
     width: 100vw;
     height: 35vh;
     text-align: center;
+    margin-top: 5vh;
+    
 }
 
 .proj-close img {
     width: 10vh;
-    padding: 5vh;
+    padding: 3.5vh;
+
 }
 
 .proj-close-text {
-    margin-top: 7vh;
+    margin-top: 2vh;
 }
+
 
 @media only screen and (max-width: 1200px) {
 
@@ -434,6 +473,7 @@ strong {
     .logo {
         width: 10vw;
     }
+    
 
     #hero-button {
         margin: 75px auto;
@@ -455,6 +495,10 @@ strong {
         font-size: 30px;
     }
 
+    .proj-details {
+       padding-bottom: 5vh;
+    }
+
     .project-indv {
         width: 80vw;
         height: 80vw;
@@ -466,10 +510,17 @@ strong {
         background: rgba(0, 0, 0, 0.5);
     }
 
+    .proj-video {
+        height: 75vh;
+    }
        
     .proj-details-con-1 {   
         width: 30%;
     }
+}
+
+@media only screen and (max-height: 850px) {
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -489,6 +540,7 @@ strong {
         width: 14vw;
         margin-top: 10vh;
     }
+
 
     #tech-i-use {
         font-size: 22px;
@@ -544,7 +596,7 @@ strong {
     }
     
     .proj-video {
-        height: 40vh;
+        height: 60vh;
     }
 
     .contact-div {
@@ -553,6 +605,10 @@ strong {
 
     .contact-indv img {
       height: 8vw;
+    }
+
+    .copyright {
+        font-size: 12px;
     }
 
 }
