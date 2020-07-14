@@ -332,6 +332,23 @@ strong {
     background-size: cover;
 }
 
+/*project 5*/
+
+#project5 {
+    background-image: url("../images/bug-game.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+/*project 6*/
+
+#project6 {
+    background-image: url("../images/featherfields.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
 
 /*project page*/
 
