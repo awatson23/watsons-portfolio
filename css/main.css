@@ -164,7 +164,7 @@ strong {
     height: 100vh;
     width: 100vw;
     position: relative;
-    background-image: url("../images/bg-image.png"); /* The image used */
+    background-image: url("../images/bg-image.jpg"); /* The image used */
     background-color: #0f0e0f; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
