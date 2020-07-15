@@ -31,7 +31,7 @@ var simulation = d3.forceSimulation()
     }))
     .force('charge', d3.forceManyBody()
         .strength(-700 + -width)
-        .distanceMax(width-100)
+        .distanceMax(700)
     )
     .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -156,12 +156,6 @@ var graph = {
         "group": 3,
         "name": "JohnnyFive",
         "img":  "images/j5-logo.png",
-        "rad": 50
-    }, {
-        "id": "2",
-        "group": 3,
-        "name": "After Effects",
-        "img":  "images/after-effects-logo.png",
         "rad": 50
     }, {
         "id": "3",

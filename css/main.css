@@ -126,6 +126,7 @@ strong {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    overflow-x:hidden;
 }
 
 .title {
