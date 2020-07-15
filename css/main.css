@@ -305,7 +305,7 @@ strong {
 }
 
 .project-indv h2 {
-    font-size: 45px;
+    font-size: 38px;
     color: white;
     font-weight: 500;
     bottom: 10%;
@@ -318,7 +318,7 @@ strong {
     width: 40vw;
     height: 40vw;
     border-radius: 3%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.65);
     transition-duration: .8s;   
 }
     
