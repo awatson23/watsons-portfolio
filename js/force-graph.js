@@ -30,10 +30,10 @@ var simulation = d3.forceSimulation()
         return d.id;
     }))
     .force('charge', d3.forceManyBody()
-        .strength(-200 + -width)
-        .distanceMax(600)
+        .strength(-700 + -width)
+        .distanceMax(width-100)
     )
-    .force("center", d3.forceCenter(width / 2.2, height / 2));
+    .force("center", d3.forceCenter(width / 2, height / 2));
 
 
 
