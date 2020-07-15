@@ -206,24 +206,6 @@ var graph = {
         "img":  "images/arduino-logo.png",
         "rad": 50
     }, {
-        "id": "11",
-        "group": 3,
-        "name": "Python Pandas",
-        "img":  "images/adobe-premier-logo.png",
-        "rad": 50
-    }, {
-        "id": "12",
-        "group": 3,
-        "name": "Illustrator",
-        "img":  "images/illustrator-logo.png",
-        "rad": 50
-    }, {
-        "id": "13",
-        "group": 3,
-        "name": "Photoshop",
-        "img":  "images/photoshop-logo.png",
-        "rad": 50
-    }, {
         "id": "14",
         "group": 2,
         "name": "Python",
@@ -356,24 +338,9 @@ var graph = {
         "target": "5",
         "value": 4
 
-    }, {
-        "source": "8",
-        "target": "5",
-        "value": 4
-
-    }, {
+    },{
         "source": "8",
         "target": "14",
-        "value": 4
-
-    }, {
-        "source": "5",
-        "target": "13",
-        "value": 4
-
-    }, {
-        "source": "5",
-        "target": "2",
         "value": 4
 
     }, {
@@ -391,16 +358,7 @@ var graph = {
         "target": "3",
         "value": 4
 
-    }, {
-        "source": "5",
-        "target": "11",
-        "value": 4
-
-    }, {
-        "source": "5",
-        "target": "12",
-        "value": 4
-    }, {
+    },{
         "source": "1",
         "target": "6",
         "value": 4
