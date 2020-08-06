@@ -444,13 +444,13 @@ strong {
 
 .proj-close {
     width: 100vw;
-    height: 37vh;
+    height: 40vh;
     text-align: center;
     
 }
 
 .proj-close img {
-    width: 9vh;
+    width: 8vh;
     padding: 30px;
 }
 
