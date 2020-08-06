@@ -117,7 +117,7 @@ strong {
 
 
 .contact-indv img {
-    height: 3.5vw;
+    height: 3vw;
 }
 
 
@@ -444,20 +444,22 @@ strong {
 
 .proj-close {
     width: 100vw;
-    height: 35vh;
+    height: 37vh;
     text-align: center;
-    margin-top: 5vh;
     
 }
 
 .proj-close img {
-    width: 10vh;
-    padding: 3.5vh;
-
+    width: 9vh;
+    padding: 30px;
 }
 
 .proj-close-text {
-    margin-top: 2vh;
+    margin-top: 6.5vh;
+}
+
+.proj-close-text p  {
+    font-size: 20px;
 }
 
 

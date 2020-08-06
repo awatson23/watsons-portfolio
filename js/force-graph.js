@@ -230,12 +230,6 @@ var graph = {
         "img":  "images/c4d-logo.png",
         "rad": 50
     }, {
-        "id": "19",
-        "group": 6,
-        "name": "Shopify",
-        "img":  "images/shopify-logo.png",
-        "rad": 50
-    },{
         "id": "20",
         "group": 6,
         "name": "Node",
@@ -280,11 +274,6 @@ var graph = {
     }, {
         "source": "20",
         "target": "6",
-        "value": 4
-
-    }, {
-        "source": "19",
-        "target": "8",
         "value": 4
 
     }, {
