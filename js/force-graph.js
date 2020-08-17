@@ -9,7 +9,7 @@ var height = dimensions.offsetHeight;
 
 maxNodeSize = 50;
 
-//companies, job titles (alumni), back end, front end, framework tech  
+ 
 var svg = d3.select("#force-graph")
     .append('svg')
     .attr("width", width)
@@ -145,116 +145,102 @@ function dragended(d) {
 
 
 var graph = {
+
+    //images, sizes, and id of me and technologies icons
     "nodes": [{ 
         "id": "8",
-        "group": 2,
         "name": "ME",
         "img":  "images/me.png",
         "rad": 100
     }, {
         "id": "1",
-        "group": 3,
         "name": "JohnnyFive",
         "img":  "images/j5-logo.png",
         "rad": 50
     }, {
         "id": "3",
-        "group": 3,
         "name": "Python",
         "img":  "images/greensock-logo.svg",
         "rad": 50
     }, {
         "id": "4",
-        "group": 4,
         "name": "CSS",
         "img":  "images/git-hub.png",
         "rad": 50
     }, {
         "id": "5",
-        "group": 2,
         "name": "Adobe",
         "img":  "images/adobe-logo.png",
         "rad": 50
     }, {
         "id": "6",
-        "group": 2,
         "name": "Javacript",
         "img":  "images/javascript-logo.png",
         "rad": 50
     }, {
         "id": "7",
-        "group": 2,
         "name": "Web Designer",
         "img":  "images/python-pandas-logo.png",
         "rad": 50
     }, {
         "id": "9",
-        "group": 2,
         "name": "ScrapyUI-UX Designer",
         "img":  "images/scrapy.png",
         "rad": 50
     }, {
         "id": "10",
-        "group": 2,
         "name": "Arduino",
         "img":  "images/arduino-logo.png",
         "rad": 50
     }, {
         "id": "14",
-        "group": 2,
         "name": "Python",
         "img":  "images/python-logo.png",
         "rad": 50
     }, {
         "id": "15",
-        "group": 6,
         "name": "P5.js",
         "img":  "images/p5js.png",
         "rad": 50
     }, {
         "id": "16",
-        "group": 6,
         "name": "HTML",
         "img":  "images/html-logo.png",
         "rad": 50
     }, {
         "id": "17",
-        "group": 6,
         "name": "CSS",
         "img":  "images/css-logo.png",
         "rad": 50
     }, {
         "id": "18",
-        "group": 6,
         "name": "C4D",
         "img":  "images/c4d-logo.png",
         "rad": 50
     }, {
         "id": "20",
-        "group": 6,
         "name": "Node",
         "img":  "images/node-logo.png",
         "rad": 60
     },{
         "id": "21",
-        "group": 6,
         "name": "Charts.js",
         "img":  "images/charts-js.png",
         "rad": 60
     },{
         "id": "22",
-        "group": 6,
         "name": "Tableau",
         "img":  "images/tableau-logo.png",
         "rad": 60
     },{
         "id": "23",
-        "group": 6,
         "name": "D3.js",
         "img":  "images/d3-logo.png",
         "rad": 60
     },],
 
+
+    //links connect technologies and I to eachother relevantly
 
     "links": [{
         "source": "23",
