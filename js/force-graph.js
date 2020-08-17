@@ -1,4 +1,4 @@
-//consider a javascript greeting dependant on time of day
+
 
 var dimensions = document.getElementById("force-graph");
 
