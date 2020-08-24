@@ -262,13 +262,13 @@ strong {
     margin-top: 3%;
 }
 
-.projects-container h1 {
+.projects-container h1, h2 {
     text-transform: uppercase;
 }
 
 
 
-.projects-container h1 {
+.projects-container h1, h2 {
     text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -301,7 +301,7 @@ strong {
     opacity: 1;
 }
 
-.project-indv h2 {
+.project-indv h3 {
     font-size: 38px;
     color: white;
     font-weight: 500;
@@ -489,7 +489,7 @@ strong {
         flex-direction: column;
     }
     
-    .projects-container h1 {
+    .projects-container h1, h2 {
         margin-bottom: 2%;
         font-size: 30px;
     }
@@ -549,11 +549,11 @@ strong {
         margin-top: 5vh;
     }
 
-    .projects-container h1 {
+    .projects-container h1, h2 {
         margin-bottom: 4%;
     }
 
-    .project-indv h2 {
+    .project-indv h3 {
         font-size: 35px;
     }
            
@@ -624,7 +624,7 @@ strong {
         width: 22vw; 
     }
 
-    .projects-container h1 {
+    .projects-container h1, h2 {
        font-size: 25px;
     }
 
@@ -636,7 +636,7 @@ strong {
         font-size: 18px;
     }
 
-    .project-indv h2 {
+    .project-indv h3 {
         font-size: 25px;
     }
        
