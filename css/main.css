@@ -45,7 +45,7 @@ strong {
 
 .nav-bar {
     width: 100%;
-    height: 11vh;
+    height: 9vh;
     background-color: #0f0e0f;
     display: flex;
     flex-direction: row;
@@ -55,9 +55,9 @@ strong {
 }
 
 .nav-logo {
-    height: 70%;
-    margin-top: 1.5vh;
-    width: 6vh;
+    height: 80%;
+    margin-top: 1vh;
+    width: 6.8vh;
 }
 
 .nav-logo img {
@@ -70,7 +70,7 @@ strong {
 }
 
 .left-arrow img {
-    margin-top: 3.7vh;
+    margin-top: 2.5vh;
     width: 100%;
 }
 
@@ -81,7 +81,7 @@ strong {
 
 .right-arrow img {
     width: 100%;
-    margin-top: 3.7vh;
+    margin-top: 2.5vh;
 }
 
 .copyright {
@@ -221,7 +221,7 @@ strong {
 }
 
 .logo {
-    width: 7vw;
+    width: 8vw;
     margin: 0 auto;
 }
 
@@ -470,7 +470,7 @@ strong {
     }
 
     .logo {
-        width: 10vw;
+        width: 12vw;
     }
     
 
@@ -536,7 +536,7 @@ strong {
     }
 
     .logo {
-        width: 14vw;
+        width: 16vw;
         margin-top: 10vh;
     }
 
@@ -621,7 +621,7 @@ strong {
     }
 
     .logo {
-        width: 22vw; 
+        width: 26vw; 
     }
 
     .projects-container h1, h2 {
