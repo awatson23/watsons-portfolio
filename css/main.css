@@ -376,7 +376,7 @@ strong {
 /*project 6*/
 
 #project6 {
-    background-image: url("../images/featherfields.png");
+    background-image: url("../images/polyped-app.png");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -433,8 +433,8 @@ strong {
 }
 
 .proj-video {
-    width: 100vw;
-    heighT: 100vh;
+    margin-top: 4%;
+    height: 90vh;
 }
 
 .proj-video iframe {
@@ -461,6 +461,9 @@ strong {
 .proj-close-text p  {
     font-size: 20px;
 }
+
+/* -project story structure*/
+
 
 
 @media only screen and (max-width: 1200px) {
