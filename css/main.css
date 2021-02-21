@@ -312,7 +312,7 @@ strong {
 .project-overlay {
     width: 50vw;
     height: 50vw;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.75);
     transition-duration: .8s;   
 }
     
@@ -506,7 +506,7 @@ strong {
     .project-overlay {
         width: 100vw;
         height: 100vw;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.75);
     }
 
     .proj-video {
