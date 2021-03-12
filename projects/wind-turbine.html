@@ -18,12 +18,15 @@
   vision of it being stationed as an interactive, educational museum kiosk.">
   <title>Watson's Wind Turbine Project</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> 
   <link href="../css/reset.css" rel="stylesheet" type="text/css">
   <link href="../css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <h1 class="hidden">Watson's Wind Turbine Project</h1>   
   <div class="main-container">
+       
     <div class="nav-bar">
       <div class="left-arrow">
       <a href="polyped-app.html">
@@ -32,7 +35,7 @@
       </div>
   
       <a class="nav-logo" href="../index.html">
-        <img alt="watson-logo" src="../images/official-logo-pink.svg">
+        <img alt="watson-logo"  src="../images/official-logo-pink.svg">
       </a>
   
       <div class="right-arrow">
@@ -41,40 +44,189 @@
       </a>
       </div>
     </div>
-  <div class="proj-details">
-    <div class="proj-image"><img alt="project-image" src="../images/wind-turbine-ipad.jpg"></div>
-      <div class="proj-details-con-1">
-        <div class="proj-title"><h1 class="subtitle">The Wind Turbine<br>Interactive Educational App</h1></div>
-        <div class="proj-description"><p class="copy">This project began with the challenge of building a 3D model of 
-          a structurally accurate, modern day Wind Turbine. Once I built the turbine, I planned to build the web application with the
-          vision of it being stationed as an interactive, educational museum kiosk. 
-          <br><br>
-          The Wind turbine takes up the entirety of
-          the web page as it animates, and the user is immersed as they explore the different parts and pieces of the Wind Turbine's structure and its
-          historical timeline.
-        </p></div>
-    </div>
-      <div class="proj-details-con-2">
-        <div class="proj-tech-title"><h1 class="subtitle">Technology used</h1></div>
-        <div class="proj-tech"><p>HTML</p><p>CSS</p><p>Javascript</p><p>Cinema 4D</p><p>ScrollMagic</p></div>
-        <a href="https://github.com/awatson23/Watson_A_wind-wurbine-revised"><div class="proj-github-button">Project github</div></a>
+  
+    <section class="project-hero" id="project-hero-turbine">
+      <div class="project-hero-text-con">
+  
+        <p class="hero-name"><strong>The Wind Turbine</strong></p>
+        <p class="subtitle-white">Interactive Edutainment Application</p>
+      </p>
+        <a href="#proj-details">
+        <div id="hero-button">
+          <p>PROJECT <br>DETAILS</p>
+        </div>
+        </a>
+      </div>  
+    </section>
+  
+    <div class="proj-details" id="proj-details">
+      <div class="proj-image"><img alt="project-image" src="../images/wind-turbine-ipad.jpg"></div>
+        <div class="proj-details-con">
+          <div class="proj-title"><h1 class="subtitle-pink">Project Goal</h1></div>
+          <div class="proj-description"><p class="copy">This project began with the challenge of building a 3D model of a structurally accurate, 
+            modern day Wind Turbine within Cinema 4D. Once the turbine model was built, the web application was designed
+            with the purpose of it being a fun and educational platform with different dimensions of interactivity.
+            <br>
+          </p></div>
+          <div class="date-demographic-div">
+            <div>
+              <p class="subtitle">Date</p>
+              <p class="copy">Fall 2020</p>
+            </div>
+            <div>
+              <p class="subtitle">Target Audience</p>
+              <p class="copy">Ages 10+</p>
+            </div>
+        </div>
+        <div class="proj-title">
+          <h1 class="subtitle-pink">Technologies used</h1>
+        </div>
       </div>
-
+      <div class="technologiesDiv">
+        <div class="techRowDiv">
+          <div class="techBox">
+           <img src="../images/html-5.svg">
+           <p class="tech-name">HTML</p>
+          </div>
+          <div class="techBox">
+            <img src="../images/css-3.svg">
+            <p class="tech-name">CSS</p>
+           </div>
+           <div class="techBox">
+            <img src="../images/javascript.svg">
+            <p class="tech-name">Javascript</p>
+           </div>
+           <div class="techBox">
+            <img src="../images/C4D_Logo.png">
+            <p class="tech-name">Cinema 4D</p>
+           </div>
+           <div class="techBox">
+            <img src="../images/greensock-logo.png">
+            <p class="tech-name">Greensock</p>
+           </div>
+        </div>
+      </div>
+      <div class="design-details-con">  
+        <div class="proj-title"><h1 class="subtitle-pink">Design</h1></div>
+        <div><p class="copy">
+          The Wind turbine takes up the entirety of the web page as it animates, and the user is 
+          immersed as they explore the different parts and pieces of the Wind Turbine's structure 
+          and its historical timeline.</p></div>
+          <div class="design-image-con">
+            <div class="design-image-column">
+              <img src="../images/turbine-design-1.jpg">
+              <img class="design-image-2" src="../images/turbine-design-2.jpg">
+            </div>
+              <img class="design-image-3" id="turbine-design-image-3" src="../images/turbine-design-3.jpg">
+          </div>
+          <div class="colour-typography">
+            <div class="colour">
+              <p class="subtitle">Colour</p>
+              <div class="colourRow1">
+                <div class="colourBox" id="turbine-white1"></div>
+                <div class="colourBox" id="turbine-blue1"></div>
+                <div class="colourBox" id="turbine-black1"></div>
+              </div>
+              <div class="colourRow2">
+                <div class="colourBox" id="turbine-white2"></div>
+                <div class="colourBox" id="turbine-blue2"></div>
+                <div class="colourBox" id="turbine-black2"></div>
+              </div>
+            </div>
+            <div class="typography">
+              <p class="subtitle">Typography</p>
+              <div class="typography-text">
+                <p class="copy">Primary-font: <strong class="ubuntu-font">Ubuntu</strong></p>
+                <p class="ubuntu-font" id="typog-light">Light</p>
+                <p class="ubuntu-font" id="typog-regular">Regular</p>
+                <p class="ubuntu-font" id="typog-medium">Medium</p>
+                <p class="ubuntu-font" id="typog-semi-bold">Semi-bold</p>
+                <p class="ubuntu-font" id="typog-bold">Bold</p>
+              </div>
+            </div>
+          </div>
+          <div class="proj-title">
+            <h1 class="subtitle-pink">3D Modelling</h1>
+          </div>
+          <div><p class="copy">3D models for the Turbine were built and painted within Cinema 4D and exported for use in the application. 
+          </p></div>
+      </div>
+  
+    
+    </div>
+    <div class="three-d-details-con">  
+      <div class="three-d-images">
+        <img class="three-d-image-1" src="../images/turbine-three-d-1.jpg">
+        <img class="three-d-image-2" src="../images/turbine-three-d-2.jpg">
+        <img class="three-d-image-3" src="../images/turbine-three-d-3.jpg">
+      </div>
+    </div>
+  
+  
+  
+  <div class="narrative-con">  
+  <div class="proj-title"><h1 class="subtitle-pink">Narrative</h1></div>
+  <p class="subtitle">Research</p>
+  <p class="copy">Extensive online research on the modern Wind Turbine was carried out in order to construct a storyline for the
+    application. The research was then reduced to the most compelling details and arranged into a cohesive, organized
+    fashion that would highlight the most interesting technical and historical features of the Wind Turbine..
+    </p>
+  <div class="narrative-arc-con">
+    <div class="establish-con">
+      <img src="../images/build-1.svg">
+      <p class="subtitle">Establish</p>
+      <p class="copy">The user is sent on a
+        quest of discovery to learn 
+        how the power of the wind is harnessed
+        by the modern day Wind Turbine.
+        </p>
+    </div>
+    <div class="build-con">
+      <img src="../images/build-2.svg">
+      <p class="subtitle">Build</p>
+      <p class="copy">The user discovers
+        interesting and educational details about 
+        the Wind-Turbine as they interact with the
+        application.
+        </p>
+    </div>
+    <div class="resolve-con">
+      <img src="../images/build-3.svg">
+      <p class="subtitle">Resolve</p>
+      <p class="copy">The experience closes 
+        with an inspirational statement by
+        National Geographic: "By 2050, one third of the world's electricity needs
+        will be fulfilled by wind power".
+        </p>
+    </div>
   </div>
+  </div>
+  
+  
   <div class="decor-border"></div>
-
+  
+  <div class="video-con">  
+  <div class="proj-title">
+    <h1 class="subtitle-pink">Video</h1>
+  </div>
+  
   <div class="proj-video">
     <iframe src="https://player.vimeo.com/video/437656025" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
   </div>
-
-  <div class="proj-close">
-    <div class="proj-close-text">
-      <h1 class="subtitle">Like what you see?</h1>
-      <p>Give me a shout!</p>
-    </div>  
-    <img alt="megaphone-icon" src="../images/megaphone.svg">
   </div>
+  
+    <div class="decor-border"></div>
+  
+    <div class="proj-close">
+      <a href="https://github.com/awatson23/Watson_A_wind-wurbine-revised" target="_blank">
+        <div class="proj-github-button">Project github</div></a>
+      <div class="proj-close-text">
+        <h1 class="subtitle">Like what you see?</h1>
+        <p>Give me a shout!</p>
+      </div>  
+      <img alt="megaphone-icon" src="../images/megaphone.svg">
+    </div>
+  
   
   <section class="footer">
     <div class="contact-div">

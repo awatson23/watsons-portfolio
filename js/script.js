@@ -80,3 +80,5 @@ var TxtRotate = function(el, toRotate, period) {
     .setClassToggle('.projects-container', 'scroll-anim')
     .addTo(controller);
   
+/*codepen gallery*/
+
