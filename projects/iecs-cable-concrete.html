@@ -18,6 +18,8 @@
   build a client-based project through Fanshawe College. The goal was to visualize the environmental and economical 
   value of using IECS' cable concrete compared to conventional rip-rap.">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet"> 
   <link href="../css/reset.css" rel="stylesheet" type="text/css">
   <link href="../css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -25,7 +27,7 @@
     
   <h1 class="hidden">Watson's Cable Concrete Infographic Project</h1>
   <div class="main-container">
-
+       
     <div class="nav-bar">
       <div class="left-arrow">
       <a href="wind-turbine.html">
@@ -34,7 +36,7 @@
       </div>
   
       <a class="nav-logo" href="../index.html">
-        <img alt="watson-logo" src="../images/official-logo-pink.svg">
+        <img alt="watson-logo"  src="../images/official-logo-pink.svg">
       </a>
   
       <div class="right-arrow">
@@ -43,40 +45,166 @@
       </a>
       </div>
     </div>
-
-  <div class="proj-details">
-    <div class="proj-image"><img alt="project-image" src="../images/iecs-cable-concrete.jpg"></div>
-      <div class="proj-details-con-1">
-        <div class="proj-title"><h1 class="subtitle">IECS Cable Concrete<br>Animated Web Infographic</h1></div>
-        <div class="proj-description"><p class="copy">Over the summer of 2019, Aaron Patterson and I were hired to
-          build a client-based project through Fanshawe College. The goal was to visualize the environmental and economical 
-          value of using IECS' cable concrete compared to conventional rip-rap. We approached the design as a visually
-          exciting web infographic with a linear story. We wanted it to be accesible to customers and IECS employees as a selling tool.
-          Design assets were created by Aaron Patterson in Adobe Illustrator. Together we both built the story, structure, animation and interactivity from the ground up.<br><br><strong>Team member:</strong> Aaron Patterson
-            </p></div>
-
-    </div>
-      <div class="proj-details-con-2">
-        <div class="proj-tech-title"><h1 class="subtitle">Technology used</h1></div>
-        <div class="proj-tech"><p>HTML</p><p>CSS</p><p>Javascript</p><p>jQuery</p><p>ScrollMagic</p></div>
-        <a href="https://github.com/awatson23/iecs-datapage-offline"><div class="proj-github-button">Project github</div></a>
+  
+    <section class="project-hero" id="project-hero-iecs">
+      <div class="project-hero-text-con">
+  
+        <p class="hero-name"><strong>IECS Cable Concrete</strong></p>
+        <p class="subtitle-white">Web Infographic</p>
+      </p>
+        <a href="#proj-details">
+        <div id="hero-button">
+          <p>PROJECT <br>DETAILS</p>
+        </div>
+        </a>
+      </div>  
+    </section>
+  
+    <div class="proj-details" id="proj-details">
+      <div class="proj-image"><img alt="project-image" src="../images/iecs-cable-concrete.jpg"></div>
+        <div class="proj-details-con">
+          <div class="proj-title"><h1 class="subtitle-pink">Project Goal</h1></div>
+          <div class="proj-description"><p class="copy">My project partner and I were hired to 
+            build a client-based project through Fanshawe College. The goal was to visualize the environmental and 
+            economical value of using IECS' cable concrete compared to conventional rip-rap. The application is designed
+            as a visually pleasing and friendly web infographic with a linear story. Its purpose is for customers and 
+            IECS employees to utilize it as marketing tool.
+          </p></div>
+          <div class="date-demographic-div">
+            <div>
+              <p class="subtitle">Date</p>
+              <p class="copy">Summer 2019</p>
+            </div>
+            <div>
+              <p class="subtitle">Target Audience</p>
+              <p class="copy">Cable Concrete Customers</p>
+            </div>
+        </div>
+        <div class="proj-title">
+          <h1 class="subtitle-pink">Technologies used</h1>
+        </div>
       </div>
-
+      <div class="technologiesDiv">
+        <div class="techRowDiv">
+          <div class="techBox">
+           <img src="../images/html-5.svg">
+           <p class="tech-name">HTML</p>
+          </div>
+          <div class="techBox">
+            <img src="../images/css-3.svg">
+            <p class="tech-name">CSS</p>
+           </div>
+           <div class="techBox">
+            <img src="../images/javascript.svg">
+            <p class="tech-name">Javascript</p>
+           </div>
+           <div class="techBox">
+            <img src="../images/greensock-logo.png">
+            <p class="tech-name">Greensock</p>
+           </div>
+           <div class="techBox">
+            <img src="../images/illustrator-logo.png">
+            <p class="tech-name">Adobe Illustrator</p>
+           </div>
+        </div>
+      </div>
+      <div class="design-details-con">  
+        <div class="proj-title"><h1 class="subtitle-pink">Design</h1></div>
+        <div><p class="copy">The goal of the user interface design of this application is to break down the 
+        each data point into separate sections. Each section would tie into the next in 
+        order to string together a narrative that would help the user understand what makes Cable Concrete most energy efficient.<br><br>
+        Scroll-triggered animations are sprinkled into the application to add excitement and
+        bring attention to important details.</p></div>
+          <img class="design-image-1" src="../images/iecs-design-1.jpg">
+          <img class="design-image-1" src="../images/iecs-design-2.jpg">
+          <div class="colour-typography">
+            <div class="colour">
+              <p class="subtitle">Colour</p>
+              <div class="colourRow1">
+                <div class="colourBox" id="iecs-white1"></div>
+                <div class="colourBox" id="iecs-green1"></div>
+                <div class="colourBox" id="iecs-black1"></div>
+              </div>
+              <div class="colourRow2">
+                <div class="colourBox" id="iecs-white2"></div>
+                <div class="colourBox" id="iecs-green2"></div>
+                <div class="colourBox" id="iecs-black2"></div>
+              </div>
+            </div>
+            <div class="typography">
+              <p class="subtitle">Typography</p>
+              <div class="typography-text">
+                <p class="copy">Primary-font: <strong class="lato-font">Lato</strong></p>
+                <p class="lato-font" id="typog-light">Light</p>
+                <p class="lato-font" id="typog-regular">Regular</p>
+                <p class="lato-font" id="typog-bold">Bold</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div> 
+  
+  <div class="narrative-con">  
+  <div class="proj-title"><h1 class="subtitle-pink">Narrative</h1></div>
+  <p class="subtitle">Research</p>
+  <p class="copy">IECS provided us with environmental data that we used to compare the environmental impact
+    of Cable Concrete installations versus Rip-rap installations. Along with the data provided, we collected
+    information about the environmental impacts of heavy trucks on the road and their CO2 emissions through
+    public government resources.
+    </p>
+  <div class="narrative-arc-con">
+    <div class="establish-con">
+      <img src="../images/build-1.svg">
+      <p class="subtitle">Establish</p>
+      <p class="copy">Cable Concrete is an environmentally friendly 
+        solution for erosion control projects. The user is
+        prompted to find out why.
+        </p>
+    </div>
+    <div class="build-con">
+      <img src="../images/build-2.svg">
+      <p class="subtitle">Build</p>
+      <p class="copy">As the user scrolls
+        through the web infographic, they are educated
+        on the environmental benefits of Cable Concrete through
+        visually exciting and relevant graphics.
+        </p>
+    </div>
+    <div class="resolve-con">
+      <img src="../images/build-3.svg">
+      <p class="subtitle">Resolve</p>
+      <p class="copy">The final slide is a call to action.
+        "The grass is greener on our side. Make an environmental difference with Cable Concrete."
+        </p>
+    </div>
   </div>
-
+  </div>
+  
+  
   <div class="decor-border"></div>
-
+  
+  <div class="video-con">  
+  <div class="proj-title">
+    <h1 class="subtitle-pink">Video</h1>
+  </div>
+  
   <div class="proj-video">
     <iframe src="https://player.vimeo.com/video/437644749" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
-
-  <div class="proj-close">
-    <div class="proj-close-text">
-      <h1 class="subtitle">Like what you see?</h1>
-      <p>Give me a shout!</p>
-    </div>  
-    <img alt="megaphone-icon" src="../images/megaphone.svg">
   </div>
+  
+    <div class="decor-border"></div>
+  
+    <div class="proj-close">
+      <a href="https://github.com/awatson23/iecs-datapage-offline" target="_blank">
+        <div class="proj-github-button">Project github</div></a>
+      <div class="proj-close-text">
+        <h1 class="subtitle">Like what you see?</h1>
+        <p>Give me a shout!</p>
+      </div>  
+      <img alt="megaphone-icon" src="../images/megaphone.svg">
+    </div>
+  
 
   <section class="footer">
     <div class="contact-div">

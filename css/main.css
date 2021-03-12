@@ -52,6 +52,7 @@ strong {
     justify-content: space-evenly;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 
 .nav-logo {
@@ -138,19 +139,42 @@ strong {
 
 .subtitle {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 24px;
+    margin-top: 2%;
     margin-bottom: 2%;
     line-height: 25px; 
     color: #0f0e0f;
 }
 
+.subtitle-white {
+    font-size: 25px;
+    color: white;
+}
+
+.subtitle-pink {
+    margin-top: 2.5%;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 40, 57);
+}
+
 .copy {
-    font-size: 19px;
+    font-size: 20px;
     margin-bottom: 5%;
     margin-top: 2%;
-    line-height: 25px;
+    line-height: 30px;
     font-family: 'Montserrat', sans-serif;
     color: #0f0e0f;
+}
+
+.tech-name {
+    font-size: 22px;
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+    color: #a7a7a7;
 }
 
 
@@ -161,7 +185,7 @@ strong {
     height: 100vh;
     width: 100vw;
     position: relative;
-    background-image: url("../images/bg-image.jpg"); /* The image used */
+    background-image: url("../images/bg-image-1.jpg"); /* The image used */
     background-color: #0f0e0f; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -196,7 +220,7 @@ strong {
     padding-top: 6vh;
     padding-bottom: 6vh;
     justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, .92);
+    background-color: rgba(0, 0, 0, .88);
     color: white;
     font-size: 35px;
     font-family: 'Raleway', sans-serif;
@@ -218,6 +242,7 @@ strong {
     padding: 2%;
     padding-top: 2%;
     font-weight: 300;
+    font-size: 40px;
 }
 
 .logo {
@@ -227,7 +252,7 @@ strong {
 
 #hero-button {
     text-align: left;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     padding: 15px;
@@ -381,33 +406,430 @@ strong {
 
 /*project page*/
 
-.proj-image img {
-    width: 30vw;
-    padding-left: 10%;
-    padding-bottom: 10%;
+.project-hero {
+    /*give background images according to media query sizes in the future*/
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #0f0e0f; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    z-index: 1;
+}
+
+#project-hero-spider {
+    background-image: url("../images/spider-hero.jpg"); /* The image used */
+}
+
+#project-hero-bacteriophage {
+    background-image: url("../images/bacteriophage-hero.jpg"); /* The image used */
+}
+
+#project-hero-turbine {
+    background-image: url("../images/turbine-hero.jpg"); /* The image used */
+}
+
+#project-hero-iecs {
+    background-image: url("../images/iecs-hero.jpg"); /* The image used */
+}
+
+#project-hero-gta {
+    background-image: url("../images/gta-hero.jpg"); /* The image used */
+}
+
+#project-hero-game {
+    background-image: url("../images/game-hero.jpg"); /* The image used */
+}
+
+.project-hero-text-con {
+    text-align: center;
+    width: 100%;
+    height: 88vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.835);
+    color: white;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .proj-details {
-    padding-top: 20vh;
+    padding-top: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.proj-image img {
+    display: flex;
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.proj-details-con {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+
+.design-details-con {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    padding-top: 2.5%;
+    margin: 0 auto;
+}
+
+.design-image-con {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.design-image-column {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+#turbine-design-image-3 {
+    width: 35%;
+}
+
+.narrative-con {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    margin: 0 auto;
+}
+
+.narrative-arc-con {
     display: flex;
     flex-direction: row;
 }
 
-.proj-details-con-1 {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    padding-left: 5%;
-    padding-right: 5%;
+.narrative-arc-con img {
+    width: 15%;
+    padding-bottom: 3%;
 }
 
-.proj-details-con-2 {
+.establish-con {
+    width: 33.3%;
+    padding-righT: 2%;
     display: flex;
     flex-direction: column;
-    width: 20%;
+}
+
+.build-con {
+    padding-right: 2%;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resolve-con {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-con {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    padding-top: 2.5%;
+    margin: 0 auto;
+}
+
+.design-image-1 {
+    padding-bottom: 2.5%;
+}
+
+.colour-typography {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.colour {
+    width: 50%;
+}
+
+.colourRow1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.colourRow2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.colourBox {
+    margin-top: 2%;
+    margin-right: 2%;
+    width: 100px;
+    height: 100px;
+}
+
+#phage-yellow1 {
+    background-color: #FCD146;
+}
+
+#phage-blue1 {
+    background-color: #407DB1;
+}
+
+#phage-black1 {
+    background-color: #292729;
+}
+
+#phage-yellow2 {
+    background-color: #F6B934;
+}
+
+#phage-blue2 {
+    background-color: #50638B;
+}
+
+#phage-black2 {
+    background-color: #0F0E0F;
+}
+
+#poly-white1 {
+    background-color: #ECECEC;
+}
+
+#poly-green1 {
+    background-color: #99CD32;
+}
+
+#poly-black1 {
+    background-color: #343434;
+}
+
+#poly-white2 {
+    background-color: #DFDFDF;
+}
+
+#poly-green2 {
+    background-color: #688C22;
+}
+
+#poly-black2 {
+    background-color: #242424;
+}
+
+
+#turbine-white1 {
+    background-color: #ECECEC;
+}
+
+#turbine-blue1 {
+    background-color: #428281;
+}
+
+#turbine-black1 {
+    background-color: #464950;
+}
+
+#turbine-white2 {
+    background-color: #DFDFDF;
+}
+
+#turbine-blue2 {
+    background-color: #30477B;
+}
+
+#turbine-black2 {
+    background-color: #242424;
+}
+
+
+#iecs-white1 {
+    background-color: #ECECEC;
+}
+
+#iecs-green1 {
+    background-color: #408e3a;
+}
+
+#iecs-black1 {
+    background-color: #384345;
+}
+
+#iecs-white2 {
+    background-color: #DFDFDF;
+}
+
+#iecs-green2 {
+    background-color: #247b08;
+}
+
+#iecs-black2 {
+    background-color: #001903;
+}
+
+
+#gta-white1 {
+    background-color: #ECECEC;
+}
+
+#gta-blue1 {
+    background-color: #478fff;
+}
+
+#gta-yellow1 {
+    background-color: #ffcf37;
+}
+
+#gta-white2 {
+    background-color: #DFDFDF;
+}
+
+#gta-blue2 {
+    background-color: #0265ff;
+}
+
+#gta-yellow2 {
+    background-color: #ffa500;
+}
+
+
+.typography {
+    width: 50%;
+}
+
+.typography-text {
+    margin-top: 5%;
+}
+
+.oxanium-font {
+    font-family: 'Oxanium', cursive;
+    font-size: 22px;
+    margin-top: 2%;
+}
+
+.iceberg-font {
+    font-family: 'Iceberg', cursive;
+    font-size: 22px;
+    margin-top: 2%;
+}
+
+.ubuntu-font {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    margin-top: 2%;
+}
+
+.lato-font {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin-top: 2%;
+}
+
+.raleway-font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    margin-top: 2%;
+}
+
+#typog-light {
+    font-weight: 300;
+}
+
+#typog-regular {
+    font-weight: 400;
+}
+
+#typog-medium {
+    font-weight: 500;
+}
+
+#typog-semi-bold {
+    font-weight: 600;
+}
+
+#typog-bold {
+    font-weight: 700;
+}
+
+.three-d-details-con {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 2.5%;
+    margin: 0 auto;
+}
+
+.three-d-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.three-d-image-1 {
+    width: 33.33%;
+}
+
+.three-d-image-2 {
+    width: 33.33%;
+}
+
+.three-d-image-3 {
+    width: 33.33%;
+}
+
+
+.date-demographic-div {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10%;
+}
+
+.date-demographic-div div {
+    padding-right: 10%;
+}
+
+.technologiesDiv {
+    width: 100vw;
+    height: 17vw;
+    background-color: black;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.techRowDiv {
+    margin-top: 7vh;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.techBox {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+.techBox img {
+    height: 50%;
+    margin: 0 auto;
 }
 
 .proj-tech {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     line-height: 20px;
@@ -421,17 +843,20 @@ strong {
 
 .proj-github-button {
     font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
     background-color: rgb(255, 40, 57);
     color: white;
-    width: 150px;
+    width: 200px;
     padding: 10px;
-    margin-top: 3vh;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin: 0 auto;
 }
 
 .proj-video {
-    margin-top: 4%;
-    height: 90vh;
+    height: 75vh;
+    margin-top: 3vh;
 }
 
 .proj-video iframe {
@@ -440,10 +865,11 @@ strong {
 }
 
 .proj-close {
-    width: 100vw;
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 30vw;
     height: 40vh;
     text-align: center;
-    
 }
 
 .proj-close img {
@@ -465,18 +891,37 @@ strong {
 
 @media only screen and (max-width: 1200px) {
 
+    
+    .colourBox {
+        width: 70px;
+        height: 70px;
+    }
+
     .hero-text-con {
         font-size: 40px;
+    }
+  
+    .hero-name {
+        font-size: 50px;
+    }
+
+    .subtitle-white {
+        font-size: 35px;
+    }
+
+    .subtitle-pink {
+        font-size: 24px;
     }
 
     .logo {
         width: 12vw;
     }
     
-
     #hero-button {
-        margin: 75px auto;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
         width: 3vw;
+        font-size: 22px;
     }
 
     #tech-i-use {
@@ -496,7 +941,9 @@ strong {
 
     .proj-details {
        padding-bottom: 5vh;
+       padding-top: 5vh;
     }
+
 
     .project-indv {
         width: 100vw;
@@ -513,8 +960,32 @@ strong {
         height: 75vh;
     }
        
-    .proj-details-con-1 {   
+    .proj-details-con {   
+        width: 60vw;
+    }
+
+    .design-details-con {
+        width: 60vw;
+    }
+
+    /*projects*/
+
+    .technologiesDiv {
+        height: 27vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .techRowDiv {
+        margin-top: 4vh;
+        width: 175vw;
+        height: 80%;
+    }
+
+    .techBox {
         width: 30%;
+        height: 100%;
+        text-align: center;
     }
 }
 
@@ -524,15 +995,21 @@ strong {
 
 @media only screen and (max-width: 850px) {
 
+    .colourBox {
+        width: 60px;
+        height: 60px;
+    }
+
     .hero-text-con {
         height: 94vh;
         padding-top: 3vh;
         padding-bottom: 3vh; 
     }
 
+
     #hero-button {
-        width: 3vw;
         margin-top: 13vh;
+        font-size: 18px;
     }
 
     .logo {
@@ -559,7 +1036,7 @@ strong {
            
     .proj-details {
         width: 100vw;
-        padding-top: 20vh;
+        padding-top: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -572,21 +1049,15 @@ strong {
         padding-bottom: 10%;
     }
     
-    .proj-details-con-1 {
-        display: flex;
-        flex-direction: column;
+    .proj-details-con {
         width: 70vw;
         padding-left: 15vw;
         padding-right: 15vw;
     }
     
-    .proj-details-con-2 {
-        display: flex;
-        flex-direction: column;
-        padding-top: 10vh;
+    .design-details-con {
         width: 70vw;
-        padding-left: 15vw;
-        padding-right: 15vw;
+        margin: 0 auto;
     }
 
     .proj-tech p {
@@ -595,7 +1066,7 @@ strong {
     }
     
     .proj-video {
-        height: 60vh;
+        height: 40vh;
     }
 
     .contact-div {
@@ -610,6 +1081,10 @@ strong {
         font-size: 12px;
     }
 
+    /*projects*/
+
+
+
 }
 
 @media only screen and (max-width: 450px) { 
@@ -618,6 +1093,30 @@ strong {
         font-size: 30px;
         height: 100vh;
         padding: 0%;
+    }
+
+    .hero-name {
+        font-size: 30px;
+    }
+
+    .copy {
+        font-size: 18px;
+    }
+
+    .oxanium-font {
+        font-size: 19px;
+    }
+
+    .subtitle-pink {
+        font-size: 22px;
+    }
+
+    .subtitle-white {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 20px;
     }
 
     .logo {
@@ -629,7 +1128,8 @@ strong {
     }
 
     #hero-button {
-        width: 3vw;
+        margin-top: 13vh;
+        font-size: 15px;
     }
 
     #tech-i-use {
@@ -638,6 +1138,61 @@ strong {
 
     .project-indv h3 {
         font-size: 25px;
+    }
+
+    /*projects*/
+
+    .technologiesDiv {
+        height: 45vw;
+    }
+
+    .tech-name {
+        font-size: 18px;
+    }
+
+    .narrative-arc-con {
+        flex-direction: column;
+    }
+
+    .establish-con {
+        width: 100%;
+        display: flex;
+    }
+    
+    .build-con {
+        width: 100%;
+    }
+    
+    .resolve-con {
+        width: 100%;
+        display: flex;
+    }
+
+    .colour-typography {
+        flex-direction: column;
+    }
+
+    .colour {
+        width: 100%;
+    }
+
+    .typography {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .proj-video {
+        height: 25vh;
+    }
+
+    .proj-github-button {
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .proj-close {
+        width: 70vw;
+
     }
        
 }
